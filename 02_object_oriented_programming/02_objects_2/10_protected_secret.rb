@@ -43,8 +43,3 @@ person2 = Person.new
 person2.secret = 'Shh.. this is a different secret!'
 
 puts person1.compare_secret(person2)
-
-
-
-
-
