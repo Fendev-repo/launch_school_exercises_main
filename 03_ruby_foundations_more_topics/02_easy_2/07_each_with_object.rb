@@ -28,10 +28,10 @@ collection.
 =end
 
 def each_with_object(collection, arg_obj)
-	arg_object = arg_obj
+  arg_object = arg_obj
 
-	collection.each { |element| yield(element, arg_object) }
-	arg_object
+  collection.each { |element| yield(element, arg_object) }
+  arg_object
 end
 
 =begin

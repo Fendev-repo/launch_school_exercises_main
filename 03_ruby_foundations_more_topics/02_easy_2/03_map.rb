@@ -32,11 +32,11 @@ iterate through an Array or any other collection.
 =end
 
 def map(collection)
-	return [] if collection.empty?
-	return_array = []
+  return [] if collection.empty?
+  return_array = []
 
-	collection.each { |element|  return_array << yield(element) }  
-	return_array
+  collection.each { |element|  return_array << yield(element) }  
+  return_array
 end
 
 =begin

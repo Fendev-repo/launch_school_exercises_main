@@ -20,12 +20,12 @@ methods that iterate through an Array or any other collection.
 
 =end
 def each_with_index(collection)
-	index_counter = 0
+  index_counter = 0
 
-	collection.each do |element|
-		yield(element, index_counter)
-		index_counter += 1
-	end
+  collection.each do |element|
+    yield(element, index_counter)
+    index_counter += 1
+  end
 end
 
 

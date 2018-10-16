@@ -25,14 +25,14 @@ methods that iterate through an Array or any other collection.
 =end
 
 def drop_while(collection)
-	return [] if collection.empty?
-	block_rtn_vals = []
+  return [] if collection.empty?
+  block_rtn_vals = []
 
-	collection.each_with_index do |element, idx|
-		next if yield(element)
-		return block_rtn_vals = collection.slice(idx, collection.length)
-	end
-	[]
+  collection.each_with_index do |element, idx|
+    next if yield(element)
+    return block_rtn_vals = collection.slice(idx, collection.length)
+  end
+  []
 end
 
 =begin

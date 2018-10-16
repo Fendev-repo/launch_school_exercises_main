@@ -31,12 +31,11 @@ def each_cons(collection, consec_elements)
 end
 
 =begin
-	Problem
-		- 
-	Examples
-	Data-structures
-	Algorithm
-	Code
+  Problem 
+  Examples
+  Data-structures
+  Algorithm
+  Code
 =end
 
 

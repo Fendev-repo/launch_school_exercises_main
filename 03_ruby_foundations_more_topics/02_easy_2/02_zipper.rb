@@ -21,14 +21,14 @@ zip([1, 2, 3], [4, 5, 6]) == [[1, 4], [2, 5], [3, 6]]
 =end
 
 def zip(ary1, ary2)
-	new_array_of_zipped_arys = []
+  new_array_of_zipped_arys = []
 
-	# This makes sure we use the longest array
-	# and we interate the correct number of times
-	[ary1, ary2].sort[0].length.times do |indx|
-		 new_array_of_zipped_arys << [ary1[indx], ary2[indx]]
-	end
-	new_array_of_zipped_arys
+  # This makes sure we use the longest array
+  # and we interate the correct number of times
+  [ary1, ary2].sort[0].length.times do |indx|
+    new_array_of_zipped_arys << [ary1[indx], ary2[indx]]  
+  end
+  new_array_of_zipped_arys
 end
 
 

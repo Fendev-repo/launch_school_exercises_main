@@ -16,21 +16,21 @@ Your method should also take a block to which it will yield
 
 # Using a range
 def step(start_val, end_val, step_val)
-	(start_val..end_val).each_slice(step_val) do |slice|
- 		yield slice[0]
- 	end
- 	nil
+  (start_val..end_val).each_slice(step_val) do |slice|
+    yield slice[0]
+  end
+  nil
 end
 
 # Not using range
 def step(start_val, end_val, step_val)
-	new_ary = []
-	start_val.upto(end_val) {|element| new_ary << element}
+  new_ary = []
+  start_val.upto(end_val) {|element| new_ary << element}
 
-	new_ary.each_slice(step_val) do |slice|
- 		yield slice[0]
- 	end
- 	nil
+  new_ary.each_slice(step_val) do |slice|
+    yield slice[0]
+  end
+  nil
 end
 
 

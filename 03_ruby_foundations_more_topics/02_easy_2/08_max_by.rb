@@ -19,16 +19,16 @@ iterate through an Array or any other collection.
 =end
 
 def max_by(collection)
-	return nil if collection.empty?
-	element_indx_hsh = {}
+  return nil if collection.empty?
+  element_indx_hsh = {}
 
-	collection.each_with_index do |element, idx|
-	 blk_rtn_val = yield element
-	 element_indx_hsh[blk_rtn_val] = idx	
-	end
+  collection.each_with_index do |element, idx|
+    blk_rtn_val = yield element
+    element_indx_hsh[blk_rtn_val] = idx	
+  end
 
-	largest_idx = element_indx_hsh[element_indx_hsh.keys.max]
-	collection[largest_idx]
+  largest_idx = element_indx_hsh[element_indx_hsh.keys.max]
+  collection[largest_idx]
 end
 
 =begin

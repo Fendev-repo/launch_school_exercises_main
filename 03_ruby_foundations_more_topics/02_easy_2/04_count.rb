@@ -23,13 +23,13 @@ Array or any other collection.
 =end
 
 def count(*collection)
-	return 0 if collection.empty?
-	num_true_vals_from_block = 0
+  return 0 if collection.empty?
+  num_true_vals_from_block = 0
 
-	collection.each do |element|
-		num_true_vals_from_block += 1 if yield element
-	end
-	num_true_vals_from_block
+  collection.each do |element|
+    num_true_vals_from_block += 1 if yield element
+  end
+  num_true_vals_from_block
 end
 
 =begin

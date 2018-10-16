@@ -20,17 +20,17 @@ methods that iterate through an Array or any other collection.
 =end
 
 def each_cons(collection)
-	collection.each_with_index do |element, idx|
-		yield(collection.slice(idx, 2))
-		break if (idx + 2) == collection.length 
-	end
-	nil
+  collection.each_with_index do |element, idx|
+    yield(collection.slice(idx, 2))
+    break if (idx + 2) == collection.length 
+  end
+  nil
 end
 
 =begin
-	Problem
-		- What is the best way to iterate over the collection
-			for this example?
+  Problem
+	 - What is the best way to iterate over the collection
+      for this example?
 			- Lets use Enuerable#each_with_index
 		- What is the best way to supply consecutive 2
 			elements from the current iteration index?
