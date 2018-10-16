@@ -38,8 +38,8 @@ def any?(ary)
     counter += 1
     break if counter >= ary.length
   end
-	# If the method has not yet returned true - then it must
-	# return false 
+  # If the method has not yet returned true - then it must
+  # return false 
   false
 end
 
