@@ -21,7 +21,7 @@ def each_cons(collection, consec_elements)
 
     if consec_elements == 1 
       yield(element)
-		else
+    else
       yield(collection.slice(idx, consec_elements))
     end
 
