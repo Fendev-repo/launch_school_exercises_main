@@ -16,19 +16,18 @@ methods that iterate through an Array or any other collection.
 =end
 
 def each_cons(collection, consec_elements)
-	collection.each_with_index do |element, idx|
+  collection.each_with_index do |element, idx|
+    return nil if collection.length < consec_elements
 
-		return nil if collection.length < consec_elements
-
-		if consec_elements == 1
-			yield(element)
+    if consec_elements == 1 
+      yield(element)
 		else
-			yield(collection.slice(idx, consec_elements))
-		end
-		
-		break if (idx + consec_elements) == collection.length 
-	end
-	nil
+      yield(collection.slice(idx, consec_elements))
+    end
+
+    break if (idx + consec_elements) == collection.length 
+  end
+  nil
 end
 
 =begin
