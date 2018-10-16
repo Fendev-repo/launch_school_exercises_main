@@ -28,15 +28,15 @@ named all?, any?, none?, or one?.
 =end
 
 def one?(collection)
-	return false if collection.empty?
-	block_rtn_true_count = 0
+  return false if collection.empty?
+  block_rtn_true_count = 0
 
-	collection.each do |element|
-		block_rtn_true_count += 1 if yield element
-		return false if block_rtn_true_count > 1
-	end
+  collection.each do |element|
+    block_rtn_true_count += 1 if yield element
+    return false if block_rtn_true_count > 1
+  end
 
-	block_rtn_true_count == 1 ? true : false
+  block_rtn_true_count == 1 ? true : false
 end
 
 

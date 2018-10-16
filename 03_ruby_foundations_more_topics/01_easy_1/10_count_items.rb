@@ -13,21 +13,21 @@ in your solution.
 =end
 
 def count(collection)
-	block_rtn_true_count = 0
+  block_rtn_true_count = 0
 
-	collection.each { |element| block_rtn_true_count += 1 if yield element }
-	block_rtn_true_count
+  collection.each { |element| block_rtn_true_count += 1 if yield element }
+  block_rtn_true_count
 end
 
 # Further Exploration solution (see below)
 def count(collection)
-	block_rtn_true_count = 0
+  block_rtn_true_count = 0
 
-	for element in collection
-		block_rtn_true_count += 1 if yield element
-	end
+  for element in collection
+    block_rtn_true_count += 1 if yield element
+  end
 
-	block_rtn_true_count
+  block_rtn_true_count
 end
 
 

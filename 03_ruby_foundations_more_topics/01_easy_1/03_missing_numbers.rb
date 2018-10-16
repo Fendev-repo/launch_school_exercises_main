@@ -14,20 +14,20 @@ missing([6]) == []
 
 # Solution: Option A 
 def missing(ary)
-	ary = ary.sort
-	first_num = ary.first
-	last_num = ary.last
+  ary = ary.sort
+  first_num = ary.first
+  last_num = ary.last
 
-	(first_num..last_num).select do |num|
-		next if ary.include? num
-		num
-	end
+  (first_num..last_num).select do |num|
+    next if ary.include? num
+    num
+  end
 end
 
 # Solution:  B
 def missing(ary)
-	ary = ary.sort
-	(ary.first..ary.last).to_a - ary
+  ary = ary.sort
+  (ary.first..ary.last).to_a - ary
 end
 
 =begin

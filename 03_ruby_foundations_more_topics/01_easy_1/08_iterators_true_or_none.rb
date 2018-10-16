@@ -30,10 +30,10 @@ exercises.
 
 
 def none?(ary)
-	return true if ary.empty?
+  return true if ary.empty?
 
-	ary.each { |element| return false if yield element }
-	true
+  ary.each { |element| return false if yield element }
+  true
 end
 
 =begin

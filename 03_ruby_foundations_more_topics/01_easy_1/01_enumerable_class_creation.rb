@@ -23,8 +23,8 @@ class Tree
   include Enumerable
 
   def each
-  	# implementation which yields successive members
-		# of the collection - i.e. binary tree
+    # implementation which yields successive members
+    # of the collection - i.e. binary tree
   end
 end
 

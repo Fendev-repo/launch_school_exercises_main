@@ -15,7 +15,7 @@ divisors(99400891) == [1, 9967, 9973, 99400891] # may take a minute
 =end
 
 def divisors(int)
-	(1..int).select { |num| int % num == 0 }
+  (1..int).select { |num| int % num == 0 }
 end
 
 =begin

@@ -26,21 +26,21 @@ Examples:
 =end
 
 def any?(ary)
-	ary = ary
-	return false if ary.empty?
-	counter = 0
+  ary = ary
+  return false if ary.empty?
+  counter = 0
 
-	loop do
-		block_rtn_val = yield ary[counter]
+  loop do
+    block_rtn_val = yield ary[counter]
 
-		return true if block_rtn_val == true 
+    return true if block_rtn_val == true 
 
-		counter += 1
-		break if counter >= ary.length
-	end
+    counter += 1
+    break if counter >= ary.length
+  end
 	# If the method has not yet returned true - then it must
 	# return false 
-	false
+  false
 end
 
 

@@ -29,10 +29,10 @@ Examples:
 =end
 
 def all?(ary)
-	return true if ary.empty?
+  return true if ary.empty?
 
-	ary.each { |element| return false unless yield element }
-	true
+  ary.each { |element| return false unless yield element }
+  true
 end
 
 puts all?([1, 3, 5, 6]) { |value| value.odd? } == false

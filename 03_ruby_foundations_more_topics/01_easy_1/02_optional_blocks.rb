@@ -14,11 +14,11 @@ Examples:
 
 
 def compute(arg='nothing passed')
-	if block_given? 
-		yield arg
-	else 
-		'Does not compute.'
-	end
+  if block_given? 
+    yield arg
+  else 
+    'Does not compute.'
+  end
 end
 
 =begin

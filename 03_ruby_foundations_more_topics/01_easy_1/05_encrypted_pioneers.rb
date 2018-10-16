@@ -70,38 +70,38 @@ Write a program that deciphers and prints each of these names .
 =end
 
 def unencrypt_rot13(names)
-	dictionary = rot13_dictionary
-	ary_of_names = names.split("\n")
-	all_names_decrypted = []
+  dictionary = rot13_dictionary
+  ary_of_names = names.split("\n")
+  all_names_decrypted = []
 	
 
-	ary_of_names.each do |name|
-		decrypted_name = []
+  ary_of_names.each do |name|
+    decrypted_name = []
 
-		name.chars.each do |char|
-			decrypted_name << ' ' if char == ' '
-			decrypted_name << dictionary[char.downcase.to_sym]
-		end
+    name.chars.each do |char|
+      decrypted_name << ' ' if char == ' '
+      decrypted_name << dictionary[char.downcase.to_sym]
+    end
 
-		all_names_decrypted << decrypted_name.join
-	end
-	print_names(all_names_decrypted)
+    all_names_decrypted << decrypted_name.join
+  end
+  print_names(all_names_decrypted)
 end
 
 def print_names(ary_of_names)
-	ary_of_names.each { |name| puts name }
+  ary_of_names.each { |name| puts name }
 end
 
 def rot13_dictionary
-	{ 
-	a: 'n', b: 'o', c: 'p', d: 'q',
-	e: 'r', f: 's', g: 't', h: 'u', 
-	i: 'v', j: 'w', k: 'x', l: 'y',  
-	m: 'z', n: 'a', o: 'b', p: 'c', 
-	q: 'd', r: 'e', s: 'f', t: 'g', 
-	u: 'h', v: 'i', w: 'j', x: 'k', 
-	y: 'l', z: 'm'
-	}
+  { 
+  a: 'n', b: 'o', c: 'p', d: 'q',
+  e: 'r', f: 's', g: 't', h: 'u', 
+  i: 'v', j: 'w', k: 'x', l: 'y',  
+  m: 'z', n: 'a', o: 'b', p: 'c', 
+  q: 'd', r: 'e', s: 'f', t: 'g', 
+  u: 'h', v: 'i', w: 'j', x: 'k', 
+  y: 'l', z: 'm'
+  }
 end
 
 names = <<-HEREDOC
