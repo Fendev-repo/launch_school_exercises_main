@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require "minitest/reporters"
+require 'minitest/reporters'
 Minitest::Reporters.use!
 require_relative '../lib/trinary_class'
 
