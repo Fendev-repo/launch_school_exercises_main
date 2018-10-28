@@ -66,13 +66,13 @@ Write a program that can tell if a number is perfect, abundant or deficient.
 
   - Data-structures
   - Algorithm
-    raise exception if arg number is not a natural number
-    create range
-    iterate over range
-      if block arg modulo arg number .is_zero? then
-      append value to return array
-    sum total return array value
-    return string value based on == > or <  
+    - raise exception if arg number is not a natural number
+    - create range
+    - iterate over range
+      - if block arg modulo arg number .is_zero? then
+      - append value to return array
+    - sum total return array value
+    - return string value based on == > or <  
   - Code
 
 
