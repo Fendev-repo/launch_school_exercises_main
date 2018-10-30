@@ -87,13 +87,12 @@ BONUS POINT: the characters must be read and printed one at a time.
     "whats the matter with kansas." == "Invalid character in string"
 
 - Data-structures
-- Algorithm
-  Create an IO
-  read each char from the IO and assign to string
-  return out of the method if string contains invalid characters
-  replace all double spaces with single
-  ensure that text has a full stop at the end
-  reverse the odd words
-  use the each_char to output the text
-
+- Algorithm 
+  - Create an IO
+  - read each char from the IO and assign to string
+  - return out of the method if string contains invalid characters
+  - replace all double spaces with single
+  - ensure that text has a full stop at the end
+  - reverse the odd words
+  - use the each_char to output the text
 - Code
