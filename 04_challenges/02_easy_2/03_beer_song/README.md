@@ -21,26 +21,20 @@ Write a program that can generate the lyrics of the 99 Bottles of Beer song. See
         
     - What are the verse variations?
     Standard: 99 - 2
-    # 99 bottles of beer on the wall, 99 bottles of beer.
-    # Take one down and pass it around, 98 bottles of beer on the wall.
+    - 99 bottles of beer on the wall, 99 bottles of beer.
+    - Take one down and pass it around, 98 bottles of beer on the wall.
 
     Singular bottle on wall - first sentence: verse 2
-    # 2 bottles of beer on the wall, 2 bottles of beer.
-    # Take one down and pass it around, 1 bottle of beer on the wall.
+    - 2 bottles of beer on the wall, 2 bottles of beer.
+    - Take one down and pass it around, 1 bottle of beer on the wall.
 
     Plural bottle on wall - second sentence: verse 1
-    # 1 bottle of beer on the wall, 1 bottle of beer.
-    # Take it down and pass it around, no more bottles of beer on the wall.
+    - 1 bottle of beer on the wall, 1 bottle of beer.
+    - Take it down and pass it around, no more bottles of beer on the wall.
 
     End verse - verse 0
-    # No more bottles of beer on the wall, no more bottles of beer.
-    # Go to the store and buy some more, 99 bottles of beer on the wall.
-
-    - What is the best way to template these variations?
-      
-
-
-
+    - No more bottles of beer on the wall, no more bottles of beer.
+    - Go to the store and buy some more, 99 bottles of beer on the wall.
 
   - Examples
   - Data-structures
