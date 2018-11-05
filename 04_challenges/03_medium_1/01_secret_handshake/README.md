@@ -41,35 +41,35 @@ The program should consider strings specifying an invalid binary as the value 0.
        {  1000 => { hand_shake: 'jump', qty: nil }, 
           100  => { hand_shake: 'close your eyes', qty: nil} } 
     
-    - I will iterate over the handshake hsh using the 
+  - I will iterate over the handshake hsh using the 
       Hash#each_key
     
-    - Then iterating over the largest number first, I 
-      would use the Numeric#divmod method to calculate if
-      and how many of the secret handshake items are 
-      included?
+  - Then iterating over the largest number first, I 
+    would use the Numeric#divmod method to calculate if
+    and how many of the secret handshake items are 
+    included?
       
-      bin_num = 31.to_s(2)
+    bin_num = 31.to_s(2)
 
-      reverse = false
+    reverse = false
 
-      11111.divmod(10_000) => [1, 1111]
-      bin_num = (11111 - 10_000)
-      1111.divmod(1000) => [1, 111]
-      bin_num =  (1111 - 1000)
-      111.divmod(100) => [1, 11]
-      bin_num = (111 - 100)
-      11.divmod(10) => [1, 1]
-      bin_num = (11 - 10)
-      1.divmod(1) => [1, 0]
+    11111.divmod(10_000) => [1, 1111]
+    bin_num = (11111 - 10_000)
+    1111.divmod(1000) => [1, 111]
+    bin_num =  (1111 - 1000)
+    111.divmod(100) => [1, 11]
+    bin_num = (111 - 100)
+    11.divmod(10) => [1, 1]
+    bin_num = (11 - 10)
+    1.divmod(1) => [1, 0]
 
-    - During each interation if there is a secret handshake
-      item - the I will append a scecret handshake item to 
-      a return array
+  - During each interation if there is a secret handshake
+    item - the I will append a scecret handshake item to 
+    a return array
 
-    - During the interation if there is a reverse 10_000
-      item I will reverse the array
-      hand_shake_hsh.include?    
+  - During the interation if there is a reverse 10_000
+    item I will reverse the array
+    hand_shake_hsh.include?    
 
 
   - Examples
